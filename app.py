@@ -50,7 +50,7 @@ teams = ['Sunrisers Hyderabad', 'Mumbai Indians', 'Royal Challengers Bangalore',
 
 cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi', 'Chandigarh', 'Jaipur', 'Chennai', 'Cape Town', 'Port Elizabeth', 'Durban', 'Centurion', 'East London', 'Johannesburg', 'Kimberley', 'Bloemfontein', 'Ahmedabad', 'Cuttack', 'Nagpur', 'Dharamsala', 'Visakhapatnam', 'Pune', 'Raipur', 'Ranchi', 'Abu Dhabi', 'Sharjah', 'Mohali', 'Bengaluru']
 
-pipe = pickle.load(open(r'C:\Users\vagee\OneDrive\Desktop\ipl-proj\pipe.pkl', 'rb'))
+pipe = pickle.load(open('pipe.pkl', 'rb'))
 st.title('IPL Predictor')
 
 col1, col2 = st.columns(2)
