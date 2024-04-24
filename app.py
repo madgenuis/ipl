@@ -75,7 +75,7 @@ with col5:
 
 if st.button('Predict Probability'):
     if score > target:
-        st.write(f"{batting_team} has already won!")
+        st.write(f"{batting_team} have already won!")
     else:
         runs_left = target - score
         balls_left = 120 - (overs * 6)
@@ -99,5 +99,5 @@ if st.button('Predict Probability'):
         result = pipe.predict_proba(input_df)
         loss = result[0][0]
         win = result[0][1]
-        st.header(batting_team + "- " + str(round(win * 100)) + "%")
-        st.header(bowling_team + "- " + str(round(loss * 100)) + "%")
+        st.header(batting_team + ": " + str(round(win * 100)) + "%")
+        st.header(bowling_team + ": " + str(round(loss * 100)) + "%")
